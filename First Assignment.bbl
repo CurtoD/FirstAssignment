@@ -21,23 +21,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Borgeson2012}
-J.~Borgeson, S.~Schauer, and H.~Diewald, ``{Benchmarking MCU power consumption
-  for ultra-low-power applications},'' 2012.
-
-\bibitem{Schulz2013}
+\bibitem{Wong2009}
 \BIBentryALTinterwordspacing
-E.~Schulz, ``{Choosing low-power microcontrollers by the numbers},'' 2013.
+W.~Wong, ``{Low Power Microcontroller-based Design Techniques},'' 2009.
   [Online]. Available:
-  \url{http://www.embedded.com/design/mcus-processors-and-socs/4413368/Choosing-low-power-microcontrollers-by-the-numbers}
+  \url{http://electronicdesign.com/embedded/low-power-microcontroller-based-design-techniques}
 \BIBentrySTDinterwordspacing
 
-\bibitem{atmelinnovative}
-A.~M. Holberg and A.~Saetre, ``{Innovative Techniques for Extremely Low Power
-  Consumption with 8-bit Microcontrollers},'' 2006.
-
-\bibitem{tipsntricks}
-{Microchip Technology Inc}, ``{CHAPTER 2 PIC Microcontroller Low Power Tips 'n
-  Tricks},'' 2009.
+\bibitem{SedraSmith}
+A.~Sedra and K.~C. Smith, \emph{{Microelectronic Circuits}}, 6th~ed.\hskip 1em
+  plus 0.5em minus 0.4em\relax Oxford University Press Inc, 2010.
 
 \end{thebibliography}

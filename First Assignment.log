@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.7.22)  8 OCT 2014 00:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.7.22)  8 OCT 2014 23:18
 entering extended mode
 **First*Assignment.tex
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.tex"
+
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -244,24 +246,24 @@ Package: xstring 2013/2/28  v1.7a  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks22
 )
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 \AtBeginShipoutBox=\box28
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -287,7 +289,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks24
 )))
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring ON on input line 19.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -296,107 +298,74 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.out")
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.out")
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.out")
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.out")
 \@outlinefile=\write4
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.toc")
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.toc")
 \tf@toc=\write5
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \chapter
-             *{Acronyms} [1
-
-] [2
-
-pdfTeX warning (ext4): destination with the same identifier (name{acronym}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.30 \chapter
-             {Power Consumers in a Microcontroller System}pdfTeX warning (ext4)
-: destination with the same identifier (name{acronym}) has been already used, d
-uplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.30 \chapter
-             {Power Consumers in a Microcontroller System}pdfTeX warning (ext4)
-: destination with the same identifier (name{acronym}) has been already used, d
-uplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.30 \chapter
-             {Power Consumers in a Microcontroller System}]
-Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
- [3
-
-] [4]
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.bbl" [5]
-Underfull \hbox (badness 4429) in paragraph at lines 30--34
-[]\OT1/cmr/m/n/10.95 E. Schulz, ``Choos-ing low-power mi-cro-con-trollers
- []
-
-
-Underfull \hbox (badness 6559) in paragraph at lines 30--34
-\OT1/cmr/m/n/10.95 by the num-bers,'' 2013. [On-line]. Avail-
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
- [6
+l.29 \chapter
+             {Low power systems and applications} [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
- ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\First Assignment.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Chapter 1.
+[2
+
+]
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.bbl" [3])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+ [4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `First*Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 6247 strings out of 493921
- 89667 string characters out of 3147282
- 172891 words of memory out of 3000000
- 9468 multiletter control sequences out of 15000+200000
- 12257 words of font info for 46 fonts, out of 3000000 for 9000
+ 6220 strings out of 493921
+ 89587 string characters out of 3147282
+ 171781 words of memory out of 3000000
+ 9449 multiletter control sequences out of 15000+200000
+ 12603 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,28p,372b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,28p,641b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb>
-Output written on "First Assignment.pdf" (7 pages, 95953 bytes).
+public/amsfonts/cm/cmti10.pfb>
+Output written on "First Assignment.pdf" (5 pages, 93667 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,65 +14,47 @@
 \usepackage{acronym}
 \author{Diogo Curto}
 \title{Low-Power Systems Evaluation}
-\date{Original: September 9, 2014 \\ Last Modified: October 8, 2014}
-\begin{document}
-\begin{titlepage}
-\maketitle
-\end{titlepage}
-\tableofcontents
-\chapter*{Acronyms}
-\begin{acronym}
-\acro{acronym}[RTC]{Real Time Clock}
-\acro{acronym}[BOR]{Brown-out Reset}
-\acro{acronym}[ADC]{Analog to Digital Converter}
-\acro{acronym}[DMA]{Direct Memory Access}
-\end{acronym}
-\chapter{Power Consumers in a Microcontroller System}
-\section{Power Categories}
-In a microcontroller system there are several power consuming components. 
-These components depend on the operation conditions required by the specific application.
-However, some generic approach can be made in order to specify the power consuming components, including the CPU, 
-internal and external peripherals. In this chapter, will be introduced the primary 
-power categories and system parameters. \cite{Borgeson2012} \cite{Schulz2013}
-\begin{itemize}
-\item{Standby Power (with data retention)} \\
-Often called Idle Power, this is the power consumed when the CPU is not being used and is normally waiting for an event to occur. In battery applications this is the state in which the CPU stays longer and therefore consumes the most significant battery power. Data retention is necessary so the device can resume its operation when becomes active.
-\item Peripheral Power\\
-The peripherals allow the microcontroller to gather information, communication with other systems and more. Each peripheral (internal or external) consumes significant amounts of power. 
-\item Memory power\\
-In some applications is necessary a permanent data storage. In most applications is used EEPROM which consumes a lot of power to write and read data.
-\item Active Power\\
-This is the power used when the CPU is running and processing data.
-\item Leakage Power\\
-Although the smallest, the leakage power should be minimized in order to increase the system's efficiency.
-\end{itemize}
-\section{Microcontroller Parameters}
-\begin{itemize}
-\item Periodic events (\textbf{RTC} triggered)\\
-In some cases, the application needs to run at specific time intervals. That can be achieved using the RTC to wake-up the CPU.
-\item Standby (idle) mode current consumption
-\item Data retention during standby mode\\
-Maintaining memory contents, for example the state of output ports is important in order to keep external circuits working and to allow the microcontroller to wake-up faster without the need of running start-up code, saving time and power.
-\item Available wake-up sources\\
-Even when the CPU is in standby (idle) mode, some peripherals can be active. This allows the peripherals to wake-up the CPU in order to process its data.
-\item Power monitoring \\
-Most microcontrollers include a circuit called 
-Brown-out Reset. This allows to monitor the integrity of the power source, 
-causing the device to reset in case of a significant drop in the power supply voltage.
-\item Wake-Up time\\
-Reducing the wake-up time means less power spent on operations not directly related with the application itself, increasing efficiency.
-\item Temperature\\
-The temperature has a great impact on leakage currents and should not be overlooked.
-\item ADC and digital interfaces\\
-These peripherals are the most used and the greatest consumers of power. 
-\item System and peripheral clocks\cite{atmelinnovative}\\
-Reducing clock speed minimizes the current drain. Clock gating and the use of different clocks for different components.
-\item DMA\\
-This feature allows the peripherals to complete activities while the CPU is sleeping.
-\item Optimized code and non essential components shutdown \\
-The use of optimized code allows faster execution and therefore less power consumption.\cite{tipsntricks}
-\end{itemize}
+\date{Original date: September 9, 2014 \\ Last Modified: October 8, 2014}
 
+\begin{document}
+
+\begin{titlepage}
+
+\maketitle
+
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Low power systems and applications}
+
+When defining a system as being low power it comes down to the application. Each one has a definition for what it needs to be low power. In most cases, a low power application is defined by its efficiency.  
+The system needs to get the most work done in the less time as possible, with the minimum use of CPU while working as slow as possible and consume only the strictly necessary power.\cite{Wong2009}
+
+
+With this thoughts in mind, is clear that low power systems require optimization at all levels, from the microcontroller architecture up through the application layer.
+
+Throughout this chapter will be introduced the main power categories and design techniques for the microcontroller based systems and applications to be as efficient as possible.
+
+\section{Power Categories}
+
+There are two real factors involved in the application design: dynamic power consumption when the application is running and static power for when it is asleep.\cite{SedraSmith}
+
+Dynamic power is affected mainly by the supply voltage and the charging and discharging of capacitances at the clock frequency. This is the power consumed when the CPU is running and processing data. In a more general view, dynamic power is not only associated to the CPU itself, but also to the peripherals, both internal and external. This is important since most microcontrollers have the ability to shutdown internal peripherals completely in order to save power. External peripherals can also be shutdown by using, for instance, I/O pins to power those devices, or even to control a transistor working as switch.
+
+
+Static power is caused by transistor leakage at the chip level and is highly dependable on voltage and temperature. This is considered when the CPU is in standby (idle) and normally waiting for an event to occur. In battery applications this is the state in which the CPU stays longer and therefore consumes the most significant battery power. Most applications need memory to work properly and therefore data retention power must be taken into account when discussing static power.
+ 
+In terms of embedded systems, the most common practice is to discuss current consumption of each part and therefore, over this text, device characterization will be expressed in current consumption. 
+
+\section{Design Techniques}
+
+When designing a low power system the first step is normally to do a power budget. Is necessary to evaluate
+the needed or allowable power modes and estimate for how long the system will be running to accomplish the determined objectives. It is also important to consider the use of the peripherals: the time they will run in each different power mode and so on.
+
+After this is necessary to calculate the current consumption of each mode, the time spent on each mode and get an overall calculation of peak and average power for the application.
+
+This allows to get an overall view in what is needed from the power supply and the expected battery life. It also allows to get a good view of what parts of the system need more focus in order to minimize current consumption.
 
 
 \bibliography{TESE}
