@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{acronym}
+\author{Diogo Curto}
+\title{Low-Power Systems Evaluation}
+\date{Original: September 9, 2014 \\ Last Modified: October 8, 2014}
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\tableofcontents
+\chapter*{Acronyms}
+\begin{acronym}
+\acro{acronym}[RTC]{Real Time Clock}
+\acro{acronym}[BOR]{Brown-out Reset}
+\acro{acronym}[ADC]{Analog to Digital Converter}
+\acro{acronym}[DMA]{Direct Memory Access}
+\end{acronym}
+\chapter{Power Consumers in a Microcontroller System}
+\section{Power Categories}
+In a microcontroller system there are several power consuming components. 
+These components depend on the operation conditions required by the specific application.
+However, some generic approach can be made in order to specify the power consuming components, including the CPU, 
+internal and external peripherals. In this chapter, will be introduced the primary 
+power categories and system parameters. \cite{Borgeson2012} \cite{Schulz2013}
+\begin{itemize}
+\item{Standby Power (with data retention)} \\
+Often called Idle Power, this is the power consumed when the CPU is not being used and is normally waiting for an event to occur. In battery applications this is the state in which the CPU stays longer and therefore consumes the most significant battery power. Data retention is necessary so the device can resume its operation when becomes active.
+\item Peripheral Power\\
+The peripherals allow the microcontroller to gather information, communication with other systems and more. Each peripheral (internal or external) consumes significant amounts of power. 
+\item Memory power\\
+In some applications is necessary a permanent data storage. In most applications is used EEPROM which consumes a lot of power to write and read data.
+\item Active Power\\
+This is the power used when the CPU is running and processing data.
+\item Leakage Power\\
+Although the smallest, the leakage power should be minimized in order to increase the system's efficiency.
+\end{itemize}
+\section{Microcontroller Parameters}
+\begin{itemize}
+\item Periodic events (\textbf{RTC} triggered)\\
+In some cases, the application needs to run at specific time intervals. That can be achieved using the RTC to wake-up the CPU.
+\item Standby (idle) mode current consumption
+\item Data retention during standby mode\\
+Maintaining memory contents, for example the state of output ports is important in order to keep external circuits working and to allow the microcontroller to wake-up faster without the need of running start-up code, saving time and power.
+\item Available wake-up sources\\
+Even when the CPU is in standby (idle) mode, some peripherals can be active. This allows the peripherals to wake-up the CPU in order to process its data.
+\item Power monitoring \\
+Most microcontrollers include a circuit called 
+Brown-out Reset. This allows to monitor the integrity of the power source, 
+causing the device to reset in case of a significant drop in the power supply voltage.
+\item Wake-Up time\\
+Reducing the wake-up time means less power spent on operations not directly related with the application itself, increasing efficiency.
+\item Temperature\\
+The temperature has a great impact on leakage currents and should not be overlooked.
+\item ADC and digital interfaces\\
+These peripherals are the most used and the greatest consumers of power. 
+\item System and peripheral clocks\cite{atmelinnovative}\\
+Reducing clock speed minimizes the current drain. Clock gating and the use of different clocks for different components.
+\item DMA\\
+This feature allows the peripherals to complete activities while the CPU is sleeping.
+\item Optimized code and non essential components shutdown \\
+The use of optimized code allows faster execution and therefore less power consumption.\cite{tipsntricks}
+\end{itemize}
+
+
+
+\bibliography{TESE}
+\bibliographystyle{ieeetran}
+
+\end{document}
+
