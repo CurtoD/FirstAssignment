@@ -4,5 +4,13 @@ Database file #1: TESE.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty note in Ivey2011
+Warning--empty note in Atmel_ATxmegaxxx
+Warning--empty note in PIC24FJ128GA204
+Warning--empty note in Power_saving_deep_sleep
+Warning--empty note in C8051F93x
+Warning--empty note in Sansone2013
+Warning--empty note in FRAMFujitsu
 
 Done.
+(There were 7 warnings)
