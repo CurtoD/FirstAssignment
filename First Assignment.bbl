@@ -48,9 +48,9 @@ B.~Ivey and {Microchip Technology Inc}, ``{AN1416, Low-Power Design Guide},''
 \bibitem{C8051F93x}
 {Silicon Labs}, ``{C8051F93x-C8051F92x},'' 2013.
 
-\bibitem{Sansone2013}
-C.~Sansone, W.~Miller, and {Renesas Electronics America Inc}, ``{Implementing
-  Ultra-Low-Power Design Techniques in RX100 MCU-based Applications},'' 2013.
+\bibitem{MSP430698}
+{Texas Instruments Inc}, ``{MSP430FR698x, MSP430FR598x Mixed-Signal
+  Microcontrollers},'' 2014.
 
 \bibitem{FRAMFujitsu}
 {FUJITSU SEMICONDUCTOR LIMITED}, ``{FUJITSU Semiconductor FRAM},'' 2014.

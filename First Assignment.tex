@@ -93,7 +93,7 @@ When considering a reduction in the supply voltage in order to reduce the curren
 
 As discussed in the section~\ref{Power_Categories}, the clock speed is an important factor to reduce current consumption. When considering an application that runs for a specific time and then goes back to sleep, is important to consider the trade-off between speed and current consumption, that is, evaluate what consumes more current: execute at really low speeds or run fast and then go to sleep for a longer period. 
 
-In order to explain the statement above an example is provided in figure \ref{fig:Average_power_vs_work_load_31K} for active current consumption. This figure was obtained by taking a generic application with a certain amount of work that needs to run every ten seconds. Were considered five different clock speeds:
+In order to explain the statement above, an example is provided in figure \ref{fig:Average_power_vs_work_load_31K} for active current consumption. This figure was obtained by taking a generic application with a certain amount of work that needs to run every ten seconds for five different clock speeds:
  
 \begin{eqnarray}\nonumber
 \left\{\begin{matrix}
@@ -105,7 +105,7 @@ In order to explain the statement above an example is provided in figure \ref{fi
 \end{matrix}\right.
 \end{eqnarray}
 
-As can be seen, executing at 31 KHz is always worst than higher speeds. This occurs, because since the speed is too low, the microcontroller is always working instead of in a Deep-Sleep state. 
+As can be seen, executing at 31 KHz is always worst than higher speeds. This occurs due to the very low execution speed, since the microcontroller is always working instead of in a Deep-Sleep state. 
 
 \begin{figure}[ht!]
 \centering
@@ -135,10 +135,12 @@ t_{dyn}(f) + t_{st} &=& 10 \text{ s}
 \end{matrix}\right.
 \end{eqnarray}
 
-Another important aspect of frequency reduction to consider is the fact that in order to maintain the logic level a certain amount of current must be used. This is necessary to maintain the charge level of the intrinsic capacitances of the microcontroller (recall equation \ref{Pdynamic}). For lower frequencies, this logic level must be held for more time, increasing the current consumption. When using higher frequencies, the logic level decay is negligible being more efficient than lower frequencies. An example is shown in figure \ref{fig:system_efficiency_silicon_labs}.
+Another important aspect of frequency reduction to consider is the fact that in order to maintain the logic level, a certain amount of current must be used. This is necessary to maintain the charge level of the intrinsic capacitances of the microcontroller (recall equation \ref{Pdynamic}). For lower frequencies, this logic level must be held for more time, increasing the current consumption. When using higher frequencies, the voltage (logic) level decay is negligible making these more efficient than lower frequencies. An example is shown in figure \ref{fig:system_efficiency_silicon_labs}.
 
 When considering running the application at higher speeds there is another factor that rises as shown in section \ref{Supply_voltage_range}: Most microcontrollers need higher supply voltages in order to run faster. Therefore, to avoid errors in code execution, another feature must be used: A low-voltage detector, that enables, for instance, to reduce clock speed in runtime and therefore extend battery life.
 There is another feature useful both at higher and lower speeds called the Brown-out Reset. This allows to protect the application from errors as batteries die, or when high peaks of dynamic current bring the supply voltage to an unsupported level, resetting the microcontroller in both cases.
+
+In some applications, the relevant mode is not when the application is running (active mode). This happens when the system spends a large portion of his time in a Sleep/Low-Power mode making this the most relevant mode for current consumption. Meaning that the most important mode to consider really depends on the duty cycle between the various sleep and active modes.
   
 \begin{figure}[ht!]
 \centering
@@ -156,20 +158,39 @@ The more functions that are turned off, the less current the chip will consume, 
 
 Another important factor is the oscillator start-up delay, which depends on the clock source as well as other frequency dividers/multipliers in the path.
 Wake-up time will usually be the limiting factor that determines which low-current mode can be used at a given time in the application. 
-In order to minimize this issue, some additional peripherals can be used. For instance, Microchip Technology implemented an internal voltage regulator that allows to maintain the capacitances charged, reducing wake-up time in 200 $\mu s$. 
+In order to minimize this issue, some additional peripherals can be used. For instance, an internal voltage regulator that allows to maintain the internal capacitances charged, reducing wake-up time in 200 $\mu s$. 
 
+\begin{figure}[th!]
+\centering
+\includegraphics[width=0.9\linewidth]{Average_LPM_Currents}
+\caption{Average LPM Currents vs Wake-up Frequency at 25 °C . Figure 5-3 \cite{MSP430698} } 
+\label{fig:Average_LPM_Currents}
+\end{figure}
+
+This figure comes in the sequence of figures \ref{fig:Average_power_vs_work_load_31K} and \ref{fig:Average_power_vs_work_load}. EXPLICAR!!!!!!!
 
 \subsection{Instruction Set Architecture}
 
 
 When evaluating current consumption of a microcontroller, one of the key aspects to take into account is the instruction set. That is, the amount of actual work done per unit of energy consumed. The clocking scheme - ratio between the input system clock and the instruction clock frequencies, cycles per instruction and available instructions have major impact on current consumption.
 
+For instance the ALU (Arithmetic Logic Unit), is one of the most important components of a CPU. The level of complexity has a major impact on current consumption. When an ALU is highly complex with very built-in capabilities, for instance, multiplier/divider units, floating point and registry calculation, and so on, this not always is good in therms of current consumption. 
+If the application requires very little of these features, a good portion of current is wasted. 
+But if the application requires all these features, and they are unsupported by the ALU, they must be decomposed into simpler instructions, which may require a large number of clock cycles to process. 
+
+This means that the microcontroller must be adjusted for the application in order to maximize current efficiency.
+
+In order to materialize the above statements, for instance, in some devices, Texas Instruments \cite{MSP430698}, opted to reduce CPU (ALU) complexity and incorporated an Hardware Multiplier (1 CPU Cycle\footnote{Using Direct Memory Access}) as a peripheral with no direct support for division. On the contrary, Microchip Technology \cite{PIC24FJ128GA204}, added hardware support for both multiplication (1 CPU cycle) and division (18 CPU cycles). 
+
+With no direct comparison intended beyond the point of giving two examples, these architectural choices clearly show that these two different devices are useful in different applications.
+
+ 
+
 \subsection{Data Retention}
 
-Sometimes the relevant mode is not the active mode. The most important mode to consider really depends on the duty cycle between the various sleep and active modes.
+Most microcontrollers provide two main types of sleep modes. The first is a light-sleep mode, in which the MCU core is stopped, peripherals are disabled, and clock sources are turned off. However, the MCU stays powered up, preserving the contents of registers and SRAM making the wake-up process faster.
 
-Most microcontrollers provide two main types of sleep modes. The first is a light sleep mode, in which the MCU core is stopped, peripherals are disabled, and clock sources are turned off. However, the MCU stays powered up, preserving the contents of registers and SRAM making the wake-up process faster.
-The second, is a deep sleep mode, in which the entire MCU is powered down and SRAM contents are lost. In order to avoid the loss of data, is necessary to save the needed data to Flash or EEPROM memories. When the CPU wakes-up the data needs to be restored in order to resume operation. Unfortunately, due to high write/erase time and current of Flash and/or EEPROM caused by this process, the energy used is substantial. 
+The second, is a deep-sleep mode, in which the entire MCU is powered down and SRAM contents are lost. In order to avoid the loss of data, is necessary to save the needed data to Flash or EEPROM memories. When the CPU wakes-up the data needs to be restored in order to resume operation. Unfortunately, due to high write/erase time and current spent on this process, the energy used is substantial. 
 
 \subsubsection{SRAM, EEPROM, Flash and FRAM}
 

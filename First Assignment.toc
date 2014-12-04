@@ -5,5 +5,5 @@
 \contentsline {subsection}{\numberline {1.2.2}Clock Speed}{5}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Wake-up time}{7}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Instruction Set Architecture}{8}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Data Retention}{8}{subsection.1.2.5}
-\contentsline {subsubsection}{SRAM, EEPROM, Flash and FRAM}{8}{section*.2}
+\contentsline {subsection}{\numberline {1.2.5}Data Retention}{9}{subsection.1.2.5}
+\contentsline {subsubsection}{SRAM, EEPROM, Flash and FRAM}{9}{section*.2}

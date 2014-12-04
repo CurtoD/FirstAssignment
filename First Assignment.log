@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  2 DEC 2014 15:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  3 DEC 2014 18:22
 entering extended mode
 **First*Assignment.tex
 
@@ -400,41 +400,49 @@ l.128 \begin{eqnarray}
 <to be read again> 
                    \relax 
 l.128 \begin{eqnarray}
-                      \nonumber
-<./system_efficiency_silicon_labs.png, id=114, 408.77719pt x 480.29437pt>
+                      \nonumber [6 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TE
+SE/GITHUB/FirstAssignment/Average_power_vs_work_load.png>]
+<./system_efficiency_silicon_labs.png, id=120, 408.77719pt x 480.29437pt>
 File: ./system_efficiency_silicon_labs.png Graphic file (type png)
 
 <use ./system_efficiency_silicon_labs.png>
 Package pdftex.def Info: ./system_efficiency_silicon_labs.png used on input lin
-e 145.
+e 147.
 (pdftex.def)             Requested size: 323.9978pt x 380.70357pt.
- [6 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
-ge_power_vs_work_load.png>] [7 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/G
-ITHUB/FirstAssignment/system_efficiency_silicon_labs.png>]
+ [7 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/syste
+m_efficiency_silicon_labs.png>]
+<Average_LPM_Currents.png, id=127, 753.5653pt x 369.63094pt>
+File: Average_LPM_Currents.png Graphic file (type png)
+
+<use Average_LPM_Currents.png>
+Package pdftex.def Info: Average_LPM_Currents.png used on input line 165.
+(pdftex.def)             Requested size: 323.9978pt x 158.92128pt.
+ [8 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
+ge_LPM_Currents.png>]
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
-signment.bbl" [8])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
- [9
+signment.bbl" [9])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
+ [10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
 
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `First*Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 215.
  ) 
 Here is how much of TeX's memory you used:
- 6472 strings out of 493921
- 94413 string characters out of 3144876
- 174920 words of memory out of 3000000
- 9655 multiletter control sequences out of 15000+200000
- 12910 words of font info for 48 fonts, out of 3000000 for 9000
+ 6498 strings out of 493921
+ 94782 string characters out of 3144876
+ 176020 words of memory out of 3000000
+ 9671 multiletter control sequences out of 15000+200000
+ 15100 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,28p,637b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,28p,655b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
@@ -443,12 +451,15 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "First Assignment.pdf" (10 pages, 271927 bytes).
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "First Assignment.pdf" (11 pages, 333835 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
