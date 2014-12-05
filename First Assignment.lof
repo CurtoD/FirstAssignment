@@ -1,0 +1,7 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Generic system current consumption }}{5}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Frequency vs Supply voltage. src: Figure 32-22 \cite {Atmel_ATxmegaxxx}}}{6}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Clock speed average active current vs work load. src: CH 32 \cite {PIC24FJ128GA204} \cite {Power_saving_deep_sleep}}}{7}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Clock speed average active current vs work load. src: CH 32 \cite {PIC24FJ128GA204} \cite {Power_saving_deep_sleep}}}{8}{figure.1.4}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Active Mode Current Efficiency. src: Figure 4.1 \cite {C8051F93x}}}{9}{figure.1.5}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Average LPM Currents vs Wake-up Frequency at 25 \IeC {\textdegree }C. src: Figure 5-3 \cite {MSP430698} }}{10}{figure.1.6}

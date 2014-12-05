@@ -1,4 +1,10 @@
 \documentclass[11pt,a4paper]{report}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{acronym}
+\usepackage{graphicx}
 \usepackage[latin1]{inputenc}
 \usepackage{hyperref}
 \hypersetup{
@@ -8,14 +14,12 @@
     linkcolor=black,
     urlcolor=black
 }
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{acronym}
-\usepackage{graphicx}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 \author{Diogo Curto}
 \title{Low-Power Systems Evaluation}
-\date{Original date: September 09, 2014 \\ Last Modified: December 02, 2014}
+\date{Original date: September 09, 2014 \\ Last Modified: December 05, 2014}
 
 \begin{document}
 
@@ -29,7 +33,9 @@
 
 \chapter{Low-power systems and applications}
 
-When defining a system as being low-power it comes down to the application. Every one has a definition for what it needs to be low-power. In most cases, a low-power application is defined by its efficiency. 
+Embedded systems usually have in its core a microcontroller. The "brain" of the application, in order to be considered low power, needs to meet certain requirements. Besides being specifically designed to consume as less power as possible, must provide tools to manage adverse situations with energy constraints, such as voltage drops in battery applications, low peak current, minimum acceptable battery duration and so on.
+
+When defining a system as being low-power it really comes down to the application. Every one has a definition for what it needs to be low-power. In most cases, a low-power application is defined by its efficiency. 
 The system needs to get the most work done in the less time as possible, with the minimum use of CPU while working as slow as possible and consume only the strictly necessary power \cite{Wong2009}.
 
 
@@ -59,7 +65,7 @@ In terms of embedded systems, the most common practice is to discuss current con
 \section{Design Techniques}
 
 When designing a low-power system, the first step is normally to do a power budget. Is necessary to evaluate
-the needed or allowable power modes and estimate for how long the system will be running to accomplish the determined objectives. It is also important to consider the use of the peripherals: the time they will run in each different power mode and so on \cite{Ivey2011}.
+the needed or allowable power modes and estimate for how long the system will be running to accomplish the determined objectives. It is also important to consider the use of the peripherals: the time they will run in each different power mode and so on. \cite{Ivey2011}
 
 \begin{figure}[ht!]
 \centering
@@ -85,11 +91,11 @@ When considering a reduction in the supply voltage in order to reduce the curren
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.9\linewidth]{./frequency_over_voltage}
-\caption{Frequency vs Supply voltage. Figure 32-22 \cite{Atmel_ATxmegaxxx}}
+\caption{Frequency vs Supply voltage. src: Figure 32-22 \cite{Atmel_ATxmegaxxx}}
 \label{fig:frequency_over_voltage}
 \end{figure}
 
-\subsection{Clock Speed}
+\subsection{Clock Speed}\label{sec_clock_speed}
 
 As discussed in the section~\ref{Power_Categories}, the clock speed is an important factor to reduce current consumption. When considering an application that runs for a specific time and then goes back to sleep, is important to consider the trade-off between speed and current consumption, that is, evaluate what consumes more current: execute at really low speeds or run fast and then go to sleep for a longer period. 
 
@@ -105,12 +111,12 @@ In order to explain the statement above, an example is provided in figure \ref{f
 \end{matrix}\right.
 \end{eqnarray}
 
-As can be seen, executing at 31 KHz is always worst than higher speeds. This occurs due to the very low execution speed, since the microcontroller is always working instead of in a Deep-Sleep state. 
+As can be seen, executing at 31 KHz is always worst than higher speeds. This occurs due to the very low execution speed the microcontroller is almost always working instead of in a Deep-Sleep state. 
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.9\linewidth]{./Average_power_vs_work_load_31K}
-\caption{Clock speed average active current vs work load. CH 32 \cite{PIC24FJ128GA204} \cite{Power_saving_deep_sleep}}
+\caption{Clock speed average active current vs work load. src: CH 32 \cite{PIC24FJ128GA204} \cite{Power_saving_deep_sleep}}
 \label{fig:Average_power_vs_work_load_31K}
 \end{figure}
 
@@ -119,7 +125,7 @@ A better overview of this case is shown in figure \ref{fig:Average_power_vs_work
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.9\linewidth]{./Average_power_vs_work_load}
-\caption{Clock speed average active current vs work load. CH 32 \cite{PIC24FJ128GA204} \cite{Power_saving_deep_sleep}}
+\caption{Clock speed average active current vs work load. src: CH 32 \cite{PIC24FJ128GA204} \cite{Power_saving_deep_sleep}}
 \label{fig:Average_power_vs_work_load}
 \end{figure}
 
@@ -127,8 +133,8 @@ These figures were obtained based on equation \ref{avg_current}. More explicitly
 
 \begin{eqnarray}\nonumber
 \left\{\begin{matrix}
-i_{dyn}(f) &=& i_{DD}(f) \\
-t_{dyn}(f) &=& t_{\text{WU}} + t_{\text{n inst}}(f) + t_{\text{PD}}(f)\\
+i_{dyn}(f) &=& i_{DD}(f) + i_{\text{WU}}(f) + i_{\text{PD}}(f)\\
+t_{dyn}(f) &=& t_{\text{n inst}}(f) + t_{\text{WU}} + t_{\text{PD}}(f)\\
 I_{st} &=& I_{\text{DS}} \\
 t_{st}  &=& t_{\text{DS}} \\
 t_{dyn}(f) + t_{st} &=& 10 \text{ s} 	
@@ -137,18 +143,17 @@ t_{dyn}(f) + t_{st} &=& 10 \text{ s}
 
 Another important aspect of frequency reduction to consider is the fact that in order to maintain the logic level, a certain amount of current must be used. This is necessary to maintain the charge level of the intrinsic capacitances of the microcontroller (recall equation \ref{Pdynamic}). For lower frequencies, this logic level must be held for more time, increasing the current consumption. When using higher frequencies, the voltage (logic) level decay is negligible making these more efficient than lower frequencies. An example is shown in figure \ref{fig:system_efficiency_silicon_labs}.
 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{./system_efficiency_silicon_labs}
+	\caption{Active Mode Current Efficiency. src: Figure 4.1 \cite{C8051F93x}}
+	\label{fig:system_efficiency_silicon_labs}
+\end{figure}
+
 When considering running the application at higher speeds there is another factor that rises as shown in section \ref{Supply_voltage_range}: Most microcontrollers need higher supply voltages in order to run faster. Therefore, to avoid errors in code execution, another feature must be used: A low-voltage detector, that enables, for instance, to reduce clock speed in runtime and therefore extend battery life.
 There is another feature useful both at higher and lower speeds called the Brown-out Reset. This allows to protect the application from errors as batteries die, or when high peaks of dynamic current bring the supply voltage to an unsupported level, resetting the microcontroller in both cases.
 
-In some applications, the relevant mode is not when the application is running (active mode). This happens when the system spends a large portion of his time in a Sleep/Low-Power mode making this the most relevant mode for current consumption. Meaning that the most important mode to consider really depends on the duty cycle between the various sleep and active modes.
-  
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.9\linewidth]{./system_efficiency_silicon_labs}
-\caption{Active Mode Current Efficiency. Figure 4.1 \cite{C8051F93x}}
-\label{fig:system_efficiency_silicon_labs}
-\end{figure}
-
+In some applications, the relevant mode is not when the application is running (active mode). This happens when the system spends a large portion of his time in a Sleep/Low-Power mode making this the most relevant mode for current consumption. Meaning that the most important mode to consider really depends on the duty cycle between the various sleep and active modes. \cite{atmelinnovative}
 
 \subsection{Wake-up time}
 
@@ -158,29 +163,34 @@ The more functions that are turned off, the less current the chip will consume, 
 
 Another important factor is the oscillator start-up delay, which depends on the clock source as well as other frequency dividers/multipliers in the path.
 Wake-up time will usually be the limiting factor that determines which low-current mode can be used at a given time in the application. 
-In order to minimize this issue, some additional peripherals can be used. For instance, an internal voltage regulator that allows to maintain the internal capacitances charged, reducing wake-up time in 200 $\mu s$. 
+In order to minimize this issue, some additional peripherals can be used. For instance, an internal voltage regulator that allows to maintain the internal capacitances charged reduces wake-up time in 200 $\mu s$. 
 
 \begin{figure}[th!]
 \centering
 \includegraphics[width=0.9\linewidth]{Average_LPM_Currents}
-\caption{Average LPM Currents vs Wake-up Frequency at 25 °C . Figure 5-3 \cite{MSP430698} } 
+\caption{Average LPM Currents vs Wake-up Frequency at 25 °C. src:  Figure 5-3 \cite{MSP430698} } 
 \label{fig:Average_LPM_Currents}
 \end{figure}
 
-This figure comes in the sequence of figures \ref{fig:Average_power_vs_work_load_31K} and \ref{fig:Average_power_vs_work_load}. EXPLICAR!!!!!!!
+This figure comes in the sequence of figures \ref{fig:Average_power_vs_work_load_31K} and \ref{fig:Average_power_vs_work_load}. [WAITING FOR TEXAS INST. RESPONSE...]
 
 \subsection{Instruction Set Architecture}
 
 
 When evaluating current consumption of a microcontroller, one of the key aspects to take into account is the instruction set. That is, the amount of actual work done per unit of energy consumed. The clocking scheme - ratio between the input system clock and the instruction clock frequencies, cycles per instruction and available instructions have major impact on current consumption.
 
-For instance the ALU (Arithmetic Logic Unit), is one of the most important components of a CPU. The level of complexity has a major impact on current consumption. When an ALU is highly complex with very built-in capabilities, for instance, multiplier/divider units, floating point and registry calculation, and so on, this not always is good in therms of current consumption. 
+The first thought that comes to mind is CISC vs RISC\footnote{Complex Instruction Set Computers and Reduced Instruction Set Computers}. The CISC architecture goal is to complete a task in as few lines of assembly as possible. This is achieved by building processing hardware that is capable of understanding and executing a series of operations. 
+
+On the other hand, RISC architecture is focused in having only instructions that can be executed within one clock cycle. This is achieved by separating the complex instructions with a sequence of simpler instructions.
+
+For instance the ALU (Arithmetic Logic Unit), is one of the most important components of a CPU. The level of complexity has a major impact on current consumption. When an ALU is highly complex with very built-in capabilities, for instance, multiplier/divider units, floating point, registry calculation and so on, this not always is good in therms of current consumption.
+ 
 If the application requires very little of these features, a good portion of current is wasted. 
-But if the application requires all these features, and they are unsupported by the ALU, they must be decomposed into simpler instructions, which may require a large number of clock cycles to process. 
+But if the application requires all these features, and they are unsupported by the ALU, they must be decomposed into simpler instructions, which may require more time to process. 
 
 This means that the microcontroller must be adjusted for the application in order to maximize current efficiency.
 
-In order to materialize the above statements, for instance, in some devices, Texas Instruments \cite{MSP430698}, opted to reduce CPU (ALU) complexity and incorporated an Hardware Multiplier (1 CPU Cycle\footnote{Using Direct Memory Access}) as a peripheral with no direct support for division. On the contrary, Microchip Technology \cite{PIC24FJ128GA204}, added hardware support for both multiplication (1 CPU cycle) and division (18 CPU cycles). 
+In order to materialize the above statements, for instance, in some devices, Texas Instruments \cite{MSP430userguide}, opted to reduce CPU (ALU) complexity and incorporated an Hardware Multiplier (32x32 bits), taking 1 CPU Cycle\footnote{Using Direct Memory Access} to process data, as a peripheral, with no direct support for division. On the contrary, Microchip Technology \cite{PIC24FJ128GA204}, added hardware support for both multiplication (16x16 bits, 1 CPU cycle) and division (32/16 bits, 18 CPU cycles). 
 
 With no direct comparison intended beyond the point of giving two examples, these architectural choices clearly show that these two different devices are useful in different applications.
 
@@ -192,21 +202,82 @@ Most microcontrollers provide two main types of sleep modes. The first is a ligh
 
 The second, is a deep-sleep mode, in which the entire MCU is powered down and SRAM contents are lost. In order to avoid the loss of data, is necessary to save the needed data to Flash or EEPROM memories. When the CPU wakes-up the data needs to be restored in order to resume operation. Unfortunately, due to high write/erase time and current spent on this process, the energy used is substantial. 
 
-\subsubsection{SRAM, EEPROM, Flash and FRAM}
+In order to mitigate some of these problems, another type of memory was introduced in microcontrollers: The Ferroelectric RAM (FRAM) with similar behavior as SRAM except for one important characteristic: it is non-volatile, which means an extra feature to reduce current consumption. FRAM can be used as Flash memory to store the application code and as backup to save data before power down. Although consumes more current when active, the zero consumption while shutdown allows major power savings.\cite{frams_alternatives}
 
+Table \ref{memoriescomparison} shows a short comparison between the previously referred memories. 
 
-Although SRAM is the type of memory most used in microcontrollers, Ferroelectric RAM is the most adequate for low-power applications as shown in table \ref{memoriescomparison}.
-
-\begin{table}[ht!] \caption{Comparison between different types of memories. \cite{FRAMFujitsu} \cite{FRAMPres}}
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-                  & SRAM      & EEPROM               & FRAM                  & FLASH                \\ \hline
-Type              & Volatile  & Non-Volatile         & Non-Volatile          & Non-Volatile         \\ \hline
-Write Cycle       & 55 ns     & 5 ms                 & 150 ns                & 10 $\mu$s                \\ \hline
-R/W Cycles & Unlimited & $10^6$ & $10^{13}$ & $10^5$ \\ \hline
-Read Current      & 40 mA     & 5 mA                 & 4 mA                  & 12 mA                \\ \hline
+\begin{table}[ht!]\caption{Comparison between different types of memories.\cite{FRAMFujitsu} \cite{FRAMPres} }
+\begin{tabular}{|p{2.7cm}|c|c|c|c|}
+	\hline  & SRAM & FRAM & FLASH & EEPROM \\ 
+	\hline Type & Volatile & Non-Volatile & Non-Volatile & Non-Volatile \\ 
+	\hline Write Cycle & $<< 125$ n$s$ \footnotemark[3] & 125 n$s$ & 10 $\mu s$ & 5 m$s$ \\ 
+	\hline Endurance [cycles] & unlimited & $10^{13}$ & $10^5$ & $10^6$ \\ 
+	\hline Average active current [/MHz] & $<60$ $\mu A$ & 110 $\mu A$ & 260 $\mu A$ & 50 mA \\ 
+	\hline Flexible Code and data partitioning & no & yes & no & no \\ 
+	\hline 
 \end{tabular}\label{memoriescomparison}
 \end{table}
+
+
+\footnotetext[3]{Write cycle up to 200 MHz}
+
+\subsubsection{Code Execution: Flash vs SRAM}
+
+Powering and reading the Flash memory of an MCU is one of the most significant contributions to current consumption. Some devices allow code execution from SRAM. This comes, as expected, with some trade-offs: The first step to run from SRAM is to copy the Flash contents to SRAM, which consumes significant amounts of time and current. Another disadvantage is the limited size of RAM, which is significantly smaller than Flash. This means that, in order to be worthwhile, the functions running from RAM must be limited in size or should be computationally-intensive functions.
+
+Another important drawback is the use of a single memory. Since most microcontrollers use two separate buses to read from Flash and SRAM, the limitation of using only one could imply the stalling of the processor in instructions that write back to SRAM.
+
+Can't be forgotten that in case of applications that switch from active mode to deep-sleep periodically need to restore the RAM contents after each power-on increasing the waste of power.
+
+\subsubsection{Code Execution: FRAM vs SRAM}
+
+As shown in table \ref{memoriescomparison}, FRAM can work as unified memory with flexible code and data partitioning, meaning that runtime variables can be stored in the same 'place' as program data with the drawback explained earlier. However with an important advantage: the data saved is kept when the device is shut down. There's still the possibility to use SRAM to complement the FRAM adding the advantage of independent buses. 
+
+\subsection{Proper use of Peripherals}
+
+The use of peripheral features in an embedded system is very usual, therefore, maximizing its efficiency is also a good practice to reduce current consumption.
+
+\subsubsection{Serial Interfaces: UART, SPI and I$^2$C} 
+
+The serial interface is one of the most used peripherals in an embedded system. Since the protocols used may vary, is necessary to evaluate the best in term of energy efficiency. Figure \ref{fig:serial_interfaces_comparison} shows the comparison between three serial interfaces.
+
+\begin{figure}[th!]
+\centering
+\includegraphics[width=1\linewidth]{serial_interfaces_comparison}
+\caption{Energy consumption for evaluated serial interfaces. src: Table III \cite{evaluation_serial_interfaces} }
+\label{fig:serial_interfaces_comparison}
+\end{figure}
+
+The values present in figure \ref{fig:serial_interfaces_comparison} are normalized according to equation \ref{normalized_energy_serial_interface}.
+
+\begin{equation}\label{normalized_energy_serial_interface}
+E_{norm} = (\dfrac{15.8-DataRate_{exp}}{15.8}+1)E_{exp}
+\end{equation}
+
+Where $DataRate_{exp}$ stands for the experimentally defined data rate in kbits/s and $E_{exp}$ for the experimental measured energy consumption for transferring one or nine data bytes. 
+
+From figure \ref{fig:serial_interfaces_comparison} can be seen that the most energy-efficient interface is SPI. This is mainly due to the fact that SPI protocol does not have any overhead in data transmission. 
+
+\subsubsection{Analog to Digital Converter}
+
+An analog to digital converter consists essentially of a measured voltage across a capacitor with reference voltage circuits, signal amplifiers and buffers, etc.
+When sampling and converting all this analog circuits are working and therefore consuming current. When the main objective is to save power, the best option is to run the ADC module at a higher speed than necessary for the application, disabling it between samples and reducing the sampling time to the minimum necessary to maintain measurement accuracy. As an addition, DMA can be used to save data into RAM, in order to maintain the CPU in a sleep mode, maximizing the module's efficiency.
+
+In this case some considerations must be taken into account: If the module is being turned off and on, there is a minimum delay before taking a sample. When the source impedance of the analog signal is high the current drawn from the source by leakage can affect accuracy. If the input signal does not change too quickly an extra capacitor must be added to charge the internal holding capacitor, increasing accuracy. At last, putting the microcontroller in a sleep mode also improves accuracy, since the digital noise from the CPU and other peripherals is minimized.
+
+\subsubsection{DMA and FIFO Buffers}
+
+The Direct Memory Access controller is mainly used to reduce the CPU overhead, since it allows to perform data transfer tasks without CPU intervention. Since it can work even with the CPU in a sleep mode, it is a great tool to reduce power consumption. 
+
+Another important feature is the used of FIFO buffers. This buffers store received data until they are full. Once this happens, an interrupt is fed to the CPU in order to process the data and empty the FIFO. This allows a great power saving because the CPU does not need to handle individually every single transfer.
+
+\subsubsection{Brown-out Reset}
+
+As explained in section \ref{sec_clock_speed} an important peripheral feature is the Brown-out Reset (BOR). Since it protects the application from miss-execution due to voltage drop, it also consumes a significant amount of power. 
+
+The best way to deal with this issue, without letting the application unprotected from voltage drops, is to have a dynamic BOR. This is achieved by: first, allowing the microcontroller to disable this peripheral in sleep modes, since it's main objective is protect from miss-execution, in sleep modes it is no longer needed when the CPU is not running; second, by using a low-power BOR that ensures that the microcontroller will always have a power-on reset to place it in a known state. 
+
+The first approach is not the best, although the CPU is not working does not mean that other peripherals can't be affected by voltage drops. It is always best to have some sort of protection to avoid errors.
 
 
 \bibliography{TESE}

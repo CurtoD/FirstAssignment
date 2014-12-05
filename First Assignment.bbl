@@ -45,6 +45,10 @@ B.~Ivey and {Microchip Technology Inc}, ``{AN1416, Low-Power Design Guide},''
 \bibitem{Power_saving_deep_sleep}
 ------, ``{Section 39. Power-Saving Features with Deep Sleep},'' 2009.
 
+\bibitem{atmelinnovative}
+A.~M. Holberg and A.~Saetre, ``{Innovative Techniques for Extremely Low Power
+  Consumption with 8-bit Microcontrollers},'' 2006.
+
 \bibitem{C8051F93x}
 {Silicon Labs}, ``{C8051F93x-C8051F92x},'' 2013.
 
@@ -52,11 +56,30 @@ B.~Ivey and {Microchip Technology Inc}, ``{AN1416, Low-Power Design Guide},''
 {Texas Instruments Inc}, ``{MSP430FR698x, MSP430FR598x Mixed-Signal
   Microcontrollers},'' 2014.
 
+\bibitem{MSP430userguide}
+------, ``{MSP430x09x Family User ' s Guide},'' 2010.
+
+\bibitem{frams_alternatives}
+\BIBentryALTinterwordspacing
+P.~Thanigai and {Texas Instruments Inc}, ``{FRAMs as alternatives to flash
+  memory in embedded designs}.'' [Online]. Available:
+  \url{http://www.embedded.com/design/mcus-processors-and-socs/4390688/2/FRAMs-as-alternatives-to-flash-memory-in-embedded-designs}
+\BIBentrySTDinterwordspacing
+
 \bibitem{FRAMFujitsu}
 {FUJITSU SEMICONDUCTOR LIMITED}, ``{FUJITSU Semiconductor FRAM},'' 2014.
 
 \bibitem{FRAMPres}
 G.~Allen, C.~Stanfield, and G.~Zheng, ``{Ferroelectric Random Access Memory},''
   University of Michigan, Tech. Rep., 2012.
+
+\bibitem{evaluation_serial_interfaces}
+\BIBentryALTinterwordspacing
+K.~Mikhaylov and J.~Tervonen, ``{Evaluation of Power Efficiency for Digital
+  Serial Interfaces of Microcontrollers},'' \emph{2012 5th International
+  Conference on New Technologies, Mobility and Security (NTMS)}, pp. 1--5, May
+  2012. [Online]. Available:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6208716}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

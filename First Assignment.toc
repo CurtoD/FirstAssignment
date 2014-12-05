@@ -2,8 +2,14 @@
 \contentsline {section}{\numberline {1.1}Power Categories}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Design Techniques}{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Supply Voltage Range}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Clock Speed}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Wake-up time}{7}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.2}Clock Speed}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Wake-up time}{8}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Instruction Set Architecture}{8}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Data Retention}{9}{subsection.1.2.5}
-\contentsline {subsubsection}{SRAM, EEPROM, Flash and FRAM}{9}{section*.2}
+\contentsline {subsubsection}{\numberline {1.2.5.1}Code Execution: Flash vs SRAM}{10}{subsubsection.1.2.5.1}
+\contentsline {subsubsection}{\numberline {1.2.5.2}Code Execution: FRAM vs SRAM}{11}{subsubsection.1.2.5.2}
+\contentsline {subsection}{\numberline {1.2.6}Proper use of Peripherals}{11}{subsection.1.2.6}
+\contentsline {subsubsection}{\numberline {1.2.6.1}Serial Interfaces: UART, SPI and I$^2$C}{11}{subsubsection.1.2.6.1}
+\contentsline {subsubsection}{\numberline {1.2.6.2}Analog to Digital Converter}{12}{subsubsection.1.2.6.2}
+\contentsline {subsubsection}{\numberline {1.2.6.3}DMA and FIFO Buffers}{12}{subsubsection.1.2.6.3}
+\contentsline {subsubsection}{\numberline {1.2.6.4}Brown-out Reset}{12}{subsubsection.1.2.6.4}

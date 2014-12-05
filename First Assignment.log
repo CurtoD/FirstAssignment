@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  3 DEC 2014 18:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  5 DEC 2014 04:48
 entering extended mode
 **First*Assignment.tex
 
@@ -33,10 +33,134 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
+Package: acronym 2014/09/29 v1.40 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+\@xs@message=\write3
+\integerpart=\count100
+\decimalpart=\count101
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\AC@clearlist=\toks20
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
@@ -51,8 +175,8 @@ Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
@@ -89,10 +213,6 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
@@ -102,14 +222,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen103
-\Hy@linkcounter=\count88
-\Hy@pagecounter=\count89
+\@linkdim=\dimen116
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count90
+\Hy@SavedSpaceFactor=\count105
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -121,17 +241,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count91
+\c@Hy@tempcnt=\count106
 
 (C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen104
-\Fld@menulength=\count92
-\Field@Width=\dimen105
-\Fld@charsize=\dimen106
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count107
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -141,157 +261,68 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count93
-\c@Item=\count94
-\c@Hfootnote=\count95
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count96
-\c@bookmark@seq@number=\count97
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip48
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 10.
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip44
-
-For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks17
-\ex@=\dimen107
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen108
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count99
-\leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count101
-\DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen109
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count103
-\c@MaxMatrixCols=\count104
-\dotsspace@=\muskip11
-\c@parentequation=\count105
-\dspbrk@lvl=\count106
-\tag@help=\toks18
-\row@=\count107
-\column@=\count108
-\maxfields@=\count109
-\andhelp@=\toks19
-\eqnshift@=\dimen110
-\alignsep@=\dimen111
-\tagshift@=\dimen112
-\tagwidth@=\dimen113
-\totwidth@=\dimen114
-\lineht@=\dimen115
-\@envbody=\toks20
-\multlinegap=\skip45
-\multlinetaggap=\skip46
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
-Package: acronym 2014/09/29 v1.40 Support for acronyms (Tobias Oetiker)
-
-(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\suffix.sty
-Package: suffix 2006/07/15 1.5a Variant command support
-)
-(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
-(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
-\@xs@message=\write3
-\integerpart=\count110
-\decimalpart=\count111
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\AC@clearlist=\toks22
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count112
-))
-\Gin@req@height=\dimen116
-\Gin@req@width=\dimen117
-)
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-\AtBeginShipoutBox=\box28
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+
+(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen120
+\scratchbox=\box28
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen121
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks25
+)
+\AtBeginShipoutBox=\box29
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 24.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -299,45 +330,29 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count113
+\c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.out")
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.out")
 \@outlinefile=\write4
-
-(C:\Users\Diogo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen118
-\scratchbox=\box29
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen119
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks24
-)
-Package hyperref Info: Option `pageanchor' set `false' on input line 23.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+Package hyperref Info: Option `pageanchor' set `false' on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
-
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Diogo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 25.
+Package hyperref Info: Option `pageanchor' set `true' on input line 29.
 
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.toc")
@@ -348,101 +363,165 @@ signment.toc")
 Chapter 1.
 [2
 
-] <Current_over_time.jpg, id=72, 464.4853pt x 273.27094pt>
+] <Current_over_time.jpg, id=107, 464.4853pt x 273.27094pt>
 File: Current_over_time.jpg Graphic file (type jpg)
 
 <use Current_over_time.jpg>
-Package pdftex.def Info: Current_over_time.jpg used on input line 66.
+Package pdftex.def Info: Current_over_time.jpg used on input line 72.
 (pdftex.def)             Requested size: 323.9978pt x 190.62117pt.
- [3 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Curre
-nt_over_time.jpg>]
-<./frequency_over_voltage.png, id=82, 371.88937pt x 234.1247pt>
+ [3]
+<./frequency_over_voltage.png, id=118, 371.88937pt x 234.1247pt>
 File: ./frequency_over_voltage.png Graphic file (type png)
 
 <use ./frequency_over_voltage.png>
-Package pdftex.def Info: ./frequency_over_voltage.png used on input line 87.
+Package pdftex.def Info: ./frequency_over_voltage.png used on input line 93.
 (pdftex.def)             Requested size: 323.9978pt x 203.97977pt.
- [4 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/frequ
-ency_over_voltage.png>]
-<./Average_power_vs_work_load_31K.png, id=93, 618.05907pt x 392.21532pt>
+ [4 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Curre
+nt_over_time.jpg>]
+<./Average_power_vs_work_load_31K.png, id=128, 618.05907pt x 392.21532pt>
 File: ./Average_power_vs_work_load_31K.png Graphic file (type png)
 
 <use ./Average_power_vs_work_load_31K.png>
 Package pdftex.def Info: ./Average_power_vs_work_load_31K.png used on input lin
-e 112.
+e 118.
 (pdftex.def)             Requested size: 323.9978pt x 205.6109pt.
 
-<./Average_power_vs_work_load.png, id=97, 618.05907pt x 392.21532pt>
+<./Average_power_vs_work_load.png, id=134, 618.05907pt x 392.21532pt>
 File: ./Average_power_vs_work_load.png Graphic file (type png)
 
 <use ./Average_power_vs_work_load.png>
 Package pdftex.def Info: ./Average_power_vs_work_load.png used on input line 12
-1.
+7.
 (pdftex.def)             Requested size: 323.9978pt x 205.6109pt.
- [5 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
-ge_power_vs_work_load_31K.png>]pdfTeX warning (ext4): destination with the same
- identifier (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \begin{eqnarray}
-                      \nonumberpdfTeX warning (ext4): destination with the same
- identifier (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \begin{eqnarray}
-                      \nonumberpdfTeX warning (ext4): destination with the same
- identifier (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \begin{eqnarray}
-                      \nonumberpdfTeX warning (ext4): destination with the same
- identifier (name{equation.1.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \begin{eqnarray}
-                      \nonumber [6 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TE
-SE/GITHUB/FirstAssignment/Average_power_vs_work_load.png>]
-<./system_efficiency_silicon_labs.png, id=120, 408.77719pt x 480.29437pt>
+ [5pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+.2.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.145 
+       <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/fr
+equency_over_voltage.png>]
+<./system_efficiency_silicon_labs.png, id=150, 408.77719pt x 480.29437pt>
 File: ./system_efficiency_silicon_labs.png Graphic file (type png)
 
 <use ./system_efficiency_silicon_labs.png>
 Package pdftex.def Info: ./system_efficiency_silicon_labs.png used on input lin
-e 147.
+e 148.
 (pdftex.def)             Requested size: 323.9978pt x 380.70357pt.
- [7 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/syste
-m_efficiency_silicon_labs.png>]
-<Average_LPM_Currents.png, id=127, 753.5653pt x 369.63094pt>
+ [6 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
+ge_power_vs_work_load_31K.png> <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/G
+ITHUB/FirstAssignment/Average_power_vs_work_load.png>] [7 <C:/Users/Diogo/SkyDr
+ive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/system_efficiency_silicon_labs
+.png>]
+<Average_LPM_Currents.png, id=167, 753.5653pt x 369.63094pt>
 File: Average_LPM_Currents.png Graphic file (type png)
 
 <use Average_LPM_Currents.png>
-Package pdftex.def Info: Average_LPM_Currents.png used on input line 165.
+Package pdftex.def Info: Average_LPM_Currents.png used on input line 170.
 (pdftex.def)             Requested size: 323.9978pt x 158.92128pt.
  [8 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
-ge_LPM_Currents.png>]
-("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
-signment.bbl" [9])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
- [10
+ge_LPM_Currents.png>] [9]
+Underfull \hbox (badness 1546) in paragraph at lines 214--214
+[]|\OT1/cmr/m/n/10.95 Endurance [cy-
+ []
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
+
+Underfull \hbox (badness 4569) in paragraph at lines 215--215
+[]|\OT1/cmr/m/n/10.95 Average ac-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]|\OT1/cmr/m/n/10.95 Flexible Code
+ []
+
+
+Overfull \hbox (18.75116pt too wide) in paragraph at lines 210--219
+[][][] 
+ []
+
+[10]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 240.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 240.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 240.
+
+<serial_interfaces_comparison.png, id=207, 750.55406pt x 227.34938pt>
+File: serial_interfaces_comparison.png Graphic file (type png)
+
+<use serial_interfaces_comparison.png>
+Package pdftex.def Info: serial_interfaces_comparison.png used on input line 24
+6.
+(pdftex.def)             Requested size: 360.0pt x 109.05014pt.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.
+3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{normalized_energy_serial_interface}pdfTeX warning 
+(ext4): destination with the same identifier (name{equation.1.2.3}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{normalized_energy_serial_interface}pdfTeX warning 
+(ext4): destination with the same identifier (name{equation.1.2.3}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{normalized_energy_serial_interface}pdfTeX warning 
+(ext4): destination with the same identifier (name{equation.1.2.3}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 \begin{equation}
+                      \label{normalized_energy_serial_interface} [11 <C:/Users/
+Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/serial_interfaces_c
+omparison.png>]
+Overfull \hbox (4.60503pt too wide) in paragraph at lines 263--265
+\OT1/cmr/m/n/10.95 across a ca-pac-i-tor with ref-er-ence volt-age cir-cuits, s
+ig-nal am-pli-fiers and buffers,
+ []
+
+[12]
+("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
+signment.bbl" [13]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+$\OT1/cmr/m/n/10.95 / / www . embedded . com / design / mcus-[]processors-[]and
+-[]socs / 4390688 / 2 /$
+ []
+
+[14
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
 
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
 Package rerunfilecheck Info: File `First*Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 215.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
- 6498 strings out of 493921
- 94782 string characters out of 3144876
- 176020 words of memory out of 3000000
- 9671 multiletter control sequences out of 15000+200000
+ 6592 strings out of 493921
+ 96605 string characters out of 3144876
+ 180386 words of memory out of 3000000
+ 9738 multiletter control sequences out of 15000+200000
  15100 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,28p,655b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,31p,655b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
@@ -457,9 +536,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "First Assignment.pdf" (11 pages, 333835 bytes).
+Output written on "First Assignment.pdf" (16 pages, 424392 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
