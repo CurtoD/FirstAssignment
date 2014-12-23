@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline {1}Low-power systems and applications}{2}{chapter.1}
+\contentsline {chapter}{\numberline {1}Low-power systems design techniques}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Power Categories}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Design Techniques}{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Supply Voltage Range}{4}{subsection.1.2.1}
@@ -13,3 +13,5 @@
 \contentsline {subsubsection}{\numberline {1.2.6.2}Analog to Digital Converter}{12}{subsubsection.1.2.6.2}
 \contentsline {subsubsection}{\numberline {1.2.6.3}DMA and FIFO Buffers}{12}{subsubsection.1.2.6.3}
 \contentsline {subsubsection}{\numberline {1.2.6.4}Brown-out Reset}{12}{subsubsection.1.2.6.4}
+\contentsline {subsection}{\numberline {1.2.7}Hardware Design \cite {Ivey2011}}{13}{subsection.1.2.7}
+\contentsline {subsubsection}{\numberline {1.2.7.1}Unused Port Pins}{13}{subsubsection.1.2.7.1}

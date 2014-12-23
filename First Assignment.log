@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  5 DEC 2014 04:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.2)  23 DEC 2014 13:27
 entering extended mode
 **First*Assignment.tex
 
@@ -363,14 +363,14 @@ signment.toc")
 Chapter 1.
 [2
 
-] <Current_over_time.jpg, id=107, 464.4853pt x 273.27094pt>
+] <Current_over_time.jpg, id=119, 464.4853pt x 273.27094pt>
 File: Current_over_time.jpg Graphic file (type jpg)
 
 <use Current_over_time.jpg>
 Package pdftex.def Info: Current_over_time.jpg used on input line 72.
 (pdftex.def)             Requested size: 323.9978pt x 190.62117pt.
  [3]
-<./frequency_over_voltage.png, id=118, 371.88937pt x 234.1247pt>
+<./frequency_over_voltage.png, id=129, 371.88937pt x 234.1247pt>
 File: ./frequency_over_voltage.png Graphic file (type png)
 
 <use ./frequency_over_voltage.png>
@@ -378,7 +378,7 @@ Package pdftex.def Info: ./frequency_over_voltage.png used on input line 93.
 (pdftex.def)             Requested size: 323.9978pt x 203.97977pt.
  [4 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Curre
 nt_over_time.jpg>]
-<./Average_power_vs_work_load_31K.png, id=128, 618.05907pt x 392.21532pt>
+<./Average_power_vs_work_load_31K.png, id=139, 618.05907pt x 392.21532pt>
 File: ./Average_power_vs_work_load_31K.png Graphic file (type png)
 
 <use ./Average_power_vs_work_load_31K.png>
@@ -386,7 +386,7 @@ Package pdftex.def Info: ./Average_power_vs_work_load_31K.png used on input lin
 e 118.
 (pdftex.def)             Requested size: 323.9978pt x 205.6109pt.
 
-<./Average_power_vs_work_load.png, id=134, 618.05907pt x 392.21532pt>
+<./Average_power_vs_work_load.png, id=145, 618.05907pt x 392.21532pt>
 File: ./Average_power_vs_work_load.png Graphic file (type png)
 
 <use ./Average_power_vs_work_load.png>
@@ -401,7 +401,7 @@ Package pdftex.def Info: ./Average_power_vs_work_load.png used on input line 12
 l.145 
        <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/fr
 equency_over_voltage.png>]
-<./system_efficiency_silicon_labs.png, id=150, 408.77719pt x 480.29437pt>
+<./system_efficiency_silicon_labs.png, id=161, 408.77719pt x 480.29437pt>
 File: ./system_efficiency_silicon_labs.png Graphic file (type png)
 
 <use ./system_efficiency_silicon_labs.png>
@@ -413,7 +413,7 @@ ge_power_vs_work_load_31K.png> <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/G
 ITHUB/FirstAssignment/Average_power_vs_work_load.png>] [7 <C:/Users/Diogo/SkyDr
 ive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/system_efficiency_silicon_labs
 .png>]
-<Average_LPM_Currents.png, id=167, 753.5653pt x 369.63094pt>
+<Average_LPM_Currents.png, id=178, 753.5653pt x 369.63094pt>
 File: Average_LPM_Currents.png Graphic file (type png)
 
 <use Average_LPM_Currents.png>
@@ -421,77 +421,83 @@ Package pdftex.def Info: Average_LPM_Currents.png used on input line 170.
 (pdftex.def)             Requested size: 323.9978pt x 158.92128pt.
  [8 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/Avera
 ge_LPM_Currents.png>] [9]
-Underfull \hbox (badness 1546) in paragraph at lines 214--214
-[]|\OT1/cmr/m/n/10.95 Endurance [cy-
+Underfull \hbox (badness 1990) in paragraph at lines 216--216
+[]|\OT1/cmr/m/n/9 Average ac-tive cur-
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 215--215
-[]|\OT1/cmr/m/n/10.95 Average ac-tive
+Underfull \hbox (badness 7308) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/9 Flexible Code and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-[]|\OT1/cmr/m/n/10.95 Flexible Code
- []
-
-
-Overfull \hbox (18.75116pt too wide) in paragraph at lines 210--219
+Overfull \hbox (0.80229pt too wide) in paragraph at lines 210--220
 [][][] 
  []
 
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 240.
+(hyperref)                removing `superscript' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 241.
 
-<serial_interfaces_comparison.png, id=207, 750.55406pt x 227.34938pt>
+<serial_interfaces_comparison.png, id=218, 750.55406pt x 227.34938pt>
 File: serial_interfaces_comparison.png Graphic file (type png)
 
 <use serial_interfaces_comparison.png>
 Package pdftex.def Info: serial_interfaces_comparison.png used on input line 24
-6.
+7.
 (pdftex.def)             Requested size: 360.0pt x 109.05014pt.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \begin{equation}
+l.254 \begin{equation}
                       \label{normalized_energy_serial_interface}pdfTeX warning 
 (ext4): destination with the same identifier (name{equation.1.2.3}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \begin{equation}
+l.254 \begin{equation}
                       \label{normalized_energy_serial_interface}pdfTeX warning 
 (ext4): destination with the same identifier (name{equation.1.2.3}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \begin{equation}
+l.254 \begin{equation}
                       \label{normalized_energy_serial_interface}pdfTeX warning 
 (ext4): destination with the same identifier (name{equation.1.2.3}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \begin{equation}
-                      \label{normalized_energy_serial_interface} [11 <C:/Users/
-Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/serial_interfaces_c
-omparison.png>]
-Overfull \hbox (4.60503pt too wide) in paragraph at lines 263--265
+l.254 \begin{equation}
+                      \label{normalized_energy_serial_interface}
+Overfull \hbox (4.60503pt too wide) in paragraph at lines 264--266
 \OT1/cmr/m/n/10.95 across a ca-pac-i-tor with ref-er-ence volt-age cir-cuits, s
 ig-nal am-pli-fiers and buffers,
  []
 
-[12]
+[11 <C:/Users/Diogo/SkyDrive/Dropbox/My Stuff/TESE/GITHUB/FirstAssignment/seria
+l_interfaces_comparison.png>] [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 283.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 287.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 287.
+
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.bbl" [13]
 Underfull \hbox (badness 10000) in paragraph at lines 64--68
@@ -502,26 +508,26 @@ $\OT1/cmr/m/n/10.95 / / www . embedded . com / design / mcus-[]processors-[]and
 [14
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
 
 ("C:\Users\Diogo\SkyDrive\Dropbox\My Stuff\TESE\GITHUB\FirstAssignment\First As
 signment.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `First*Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
- 6592 strings out of 493921
- 96605 string characters out of 3144876
+ 6614 strings out of 493921
+ 97001 string characters out of 3144876
  180386 words of memory out of 3000000
- 9738 multiletter control sequences out of 15000+200000
+ 9755 multiletter control sequences out of 15000+200000
  15100 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,31p,655b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,15n,32p,655b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
@@ -536,9 +542,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "First Assignment.pdf" (16 pages, 424392 bytes).
+Output written on "First Assignment.pdf" (16 pages, 430697 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

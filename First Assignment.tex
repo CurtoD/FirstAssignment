@@ -31,7 +31,7 @@
 
 \tableofcontents
 
-\chapter{Low-power systems and applications}
+\chapter{Low-power systems design techniques}
 
 Embedded systems usually have in its core a microcontroller. The "brain" of the application, in order to be considered low power, needs to meet certain requirements. Besides being specifically designed to consume as less power as possible, must provide tools to manage adverse situations with energy constraints, such as voltage drops in battery applications, low peak current, minimum acceptable battery duration and so on.
 
@@ -207,17 +207,18 @@ In order to mitigate some of these problems, another type of memory was introduc
 Table \ref{memoriescomparison} shows a short comparison between the previously referred memories. 
 
 \begin{table}[ht!]\caption{Comparison between different types of memories.\cite{FRAMFujitsu} \cite{FRAMPres} }
-\begin{tabular}{|p{2.7cm}|c|c|c|c|}
-	\hline  & SRAM & FRAM & FLASH & EEPROM \\ 
-	\hline Type & Volatile & Non-Volatile & Non-Volatile & Non-Volatile \\ 
-	\hline Write Cycle & $<< 125$ n$s$ \footnotemark[3] & 125 n$s$ & 10 $\mu s$ & 5 m$s$ \\ 
-	\hline Endurance [cycles] & unlimited & $10^{13}$ & $10^5$ & $10^6$ \\ 
-	\hline Average active current [/MHz] & $<60$ $\mu A$ & 110 $\mu A$ & 260 $\mu A$ & 50 mA \\ 
-	\hline Flexible Code and data partitioning & no & yes & no & no \\ 
+\begin{tabular}{|p{3.05cm}|c|c|c|c|}
+	
+	\hline  & \footnotesize SRAM & \footnotesize FRAM & \footnotesize FLASH & \footnotesize EEPROM \\ 
+	\hline \footnotesize Type & \footnotesize Volatile & \footnotesize Non-Volatile & \footnotesize Non-Volatile & \footnotesize Non-Volatile \\ 
+	\hline \footnotesize Write Cycle [time] & $<< 125$ n$s$ \footnotemark[3] & 125 n$s$ & 10 $\mu s$ & 5 m$s$ \\ 
+	\hline \footnotesize Endurance [cycles] & unlimited & $10^{13}$ & $10^5$ & $10^6$ \\ 
+	\hline \footnotesize Average active current [/MHz] & $<60$ $\mu A$ & 110 $\mu A$ & 260 $\mu A$ & 50 mA \\ 
+	\hline \footnotesize Flexible Code and data partitioning & no & yes & no & no \\ 
 	\hline 
 \end{tabular}\label{memoriescomparison}
 \end{table}
-
+\normalsize
 
 \footnotetext[3]{Write cycle up to 200 MHz}
 
@@ -239,7 +240,7 @@ The use of peripheral features in an embedded system is very usual, therefore, m
 
 \subsubsection{Serial Interfaces: UART, SPI and I$^2$C} 
 
-The serial interface is one of the most used peripherals in an embedded system. Since the protocols used may vary, is necessary to evaluate the best in term of energy efficiency. Figure \ref{fig:serial_interfaces_comparison} shows the comparison between three serial interfaces.
+The serial interface is one of the most used peripherals in an embedded system. Since the protocols used may vary, is necessary to evaluate the best in terms of energy efficiency. Figure \ref{fig:serial_interfaces_comparison} shows the comparison between three serial interfaces.
 
 \begin{figure}[th!]
 \centering
@@ -278,6 +279,24 @@ As explained in section \ref{sec_clock_speed} an important peripheral feature is
 The best way to deal with this issue, without letting the application unprotected from voltage drops, is to have a dynamic BOR. This is achieved by: first, allowing the microcontroller to disable this peripheral in sleep modes, since it's main objective is protect from miss-execution, in sleep modes it is no longer needed when the CPU is not running; second, by using a low-power BOR that ensures that the microcontroller will always have a power-on reset to place it in a known state. 
 
 The first approach is not the best, although the CPU is not working does not mean that other peripherals can't be affected by voltage drops. It is always best to have some sort of protection to avoid errors.
+
+\subsection{Hardware Design \cite{Ivey2011}} 
+
+When designing low-power hardware to interface with the microcontroller there are some basic considerations to take into account that allow major power savings:
+\begin{itemize}
+	\item Minimize operating duty-cycles. \\
+	This applies to both internal and external hardware. By powering the hardware only when necessary and turn it off when is not needed.
+	\item Minimize leakage currents. \\
+	As explained in section \ref{sec_clock_speed}, executing at higher speeds can be more efficient.   
+	\item Maximize impedance in current paths.\\
+	Maximizing the impedance in current paths by using only the strictly necessary current.
+	\item Minimize impedance in high-speed switching paths.\\
+	Since there are always capacitances that need to be charged and discharged in switching circuits, reducing the path impedance allows for faster charge and discharge and therefore a greater working speed. 
+\end{itemize}
+
+\subsubsection{Unused Port Pins}
+
+An unused I/O pin should not be left unconnected. One of the best practices is to connect it to ground or the supply voltage through a resistor of high value. This prevents the internal transistors to be biased in the linear region due to floating signals, wasting power. 
 
 
 \bibliography{TESE}
